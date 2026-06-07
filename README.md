@@ -1,10 +1,8 @@
-# Tranlsation Nights
+# Tranlsation Nights :crescent_moon:
 
 This is a simple front end translation interface for game localisation written in Typescript and React. Feel free to look at the main file 'app.tsx' for all the source code written.
 
-It includes the foolowing features:
-
------------------- FEATURES ------------------
+# Features
 - Entry state display
   - Unfinished, Draft, Review, Approved
   - Advanceable via clicking the banner or through the hotkey: shift+enter
