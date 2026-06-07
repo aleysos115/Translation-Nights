@@ -1,73 +1,38 @@
-# React + TypeScript + Vite
+# Tranlsation Nights
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple front end translation interface for game localisation written in Typescript and React. Feel free to look at the main file 'app.tsx' for all the source code written.
 
-Currently, two official plugins are available:
+It includes the foolowing features:
+------------------ FEATURES ------------------
+- Entry state display
+  - Unfinished, Draft, Review, Approved
+  - Advanceable via clicking the banner or through the hotkey: shift+enter
+  - Stepback via shift clicking the banner or through the hotkey: ctrl+shift+enter
+- Side by Side Source and Target Text
+  - Rich Text markup of tags
+  - Real Time Validation
+    - Multiple Spaces
+    - Unclosed open tags
+    - Close tag without open pair
+  - Copy to clipboard buttons for easy copy paste
+- Constraint Validator
+  - Character per line constraint validator and visual feedback
+  - Tags (i.e. icons) with character size included. (Size can be seen in the tag's toolbar button hover tooltip)
+  - Line count validation feedback
+  - Warning validation feedback
+- Tag Inserter
+  - Tag groups with buttons for easy insertion
+  - Tags assigned hotkeys for easy of use
+- Side by Side Source and Target Game Preview
+  - Tag conversion to in-game version
+    - Font colors and formating
+    - Icon images
+- Diff History Viewer
+  - Shows a diff history viewer when entry is in "Draft, Review, Approved" state
+- Translation notes
+  - Area for adding notes and remarks during the translation process.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Note: 
+  - While this has all been implemented in a single file, in production, I would
+    split this up into multiple files for easier readability and ownership.
+  - I have used "Tailwind" here to simplify the css for this component.
