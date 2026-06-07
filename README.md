@@ -37,4 +37,5 @@ Note:
   - I have used "Tailwind" here to simplify the css for this component.
 
 # Preview
-![Preview](./resources/preview_1.png)
+
+![Preview](/resources/preview_1.png)
