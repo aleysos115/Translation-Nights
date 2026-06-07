@@ -38,4 +38,4 @@ Note:
 
 # Preview
 
-![Preview](/resources/preview_1.png)
+![Preview](./resources/preview_1.png)
