@@ -1,0 +1,50 @@
+@theme {
+  /* Backgrounds */
+  --color-bg-base:       #1a1b2e;  /* Main background */
+  --color-bg-dark:       #13141f;  /* Darker background / sidebars */
+  --color-bg-highlight:  #1f2040;  /* Highlighted background */
+  --color-bg-surface:    #24283b;  /* Cards, panels */
+  --color-bg-overlay:    #2e3354;  /* Overlays, modals */
+
+  /* Foreground / Text */
+  --color-fb-base:       #c0caf5;  /* Primary text */
+  --color-fb-muted:      #565f89;  /* Comments, disabled text */
+  --color-fb-subtle:     #3b4261;  /* Subtle borders, dividers */
+
+  /* Accent Colors */
+  --color-accent-red:    #f7768e;  /* Errors, deletions */
+  --color-accent-orange: #ff9e64;  /* Warnings, constants */
+  --color-accent-yellow: #e0af68;  /* Strings, warnings */
+  --color-accent-green:  #9ece6a;  /* Success, additions */
+  --color-accent-teal:   #73daca;  /* Keywords, links */
+  --color-accent-cyan:   #7dcfff;  /* Info, special */
+  --color-accent-blue:   #7aa2f7;  /* Functions, primary accent */
+  --color-accent-purple: #bb9af7;  /* Types, tags */
+  --color-accent-pink:   #ff007c;  /* Bold highlights */
+
+  /* Typography */
+  --font-sans: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+  --font-size-base: 16px;
+  --line-height-base: 1.6;
+
+  /* Borders & Radius */
+  --color-border-color:  #3b4261;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.6);
+
+  /* Spacing scale */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  32px;
+  --space-xl:  64px;
+}
+
+@import "tailwindcss";
